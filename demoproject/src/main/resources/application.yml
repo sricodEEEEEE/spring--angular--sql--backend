@@ -1,0 +1,24 @@
+#
+#spring.mvc.view.prefix=/WEB-INF/view/
+#spring.mvc.view.suffix=.jsp
+#
+#
+#spring.datasource.url = jdbc:mysql://localhost/projecttable ?useSSL=false
+#spring.datasource.username = root
+#spring.datasource.password = Manjunath9
+#spring.datasource.driver = com.mysql.jdbc.Driver
+#
+#logging.level.org.hibernate.SQL=debug
+#
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/projecttable
+    username: root
+    password: Manjunath9
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
